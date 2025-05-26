@@ -1,9 +1,9 @@
 ---
 - name: Deploy Maven Artifact
-  hosts:local
-  becomes:yes
+  hosts: local
+  become: yes
   tasks:
-    -name:Copy the artifat to the deployment directory
-       copy:
-         src:"/var/lib/jenkins/workspace/Jenkin_Rep1/target/maven-example-1.0-SNAPSHOT.jar"
-         dest:"/opt/HelloMaven.jar"
+    - name:
+      copy:
+        src:"/var/lib/jenkins/workspace/Jenkin_Rep1/target/maven-example-1.0-SNAPSHOT.jar"
+        dest:"/opt/HelloMaven.jar"

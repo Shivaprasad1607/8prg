@@ -3,7 +3,7 @@
   hosts: local
   become: yes
   tasks:
-    - name:
+    - name: maven-example
       copy:
         src:"/var/lib/jenkins/workspace/Jenkin_Rep1/target/maven-example-1.0-SNAPSHOT.jar"
         dest:"/opt/HelloMaven.jar"
